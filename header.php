@@ -51,7 +51,6 @@
                 echo '<div class="front-container">';
                 echo '<div class="">';
             } else if (is_home()){
-                echo "SẢN PHẨM";
                 echo '<div class="front-container">';
                 echo '<div id="page-products" class="">';
             } else {

@@ -33,38 +33,23 @@ get_header();
 			?>
 			<div class="blog-loop" <?php echo airi_masonry_data(); ?>>
 				<div class="row">
-				<div class="grid-sizer"></div>
 
 				<?php
 				/* Start the Loop */
 				while ( have_posts() ) :
 					the_post();
-
 					/*
 					 * Include the Post-Type-specific template for the content.
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 					 */
-					if	( 'layout-list-2' == $layout['type'] )
-					{
-						get_template_part( 'template-parts/content-list', '2' );
-					}
-					elseif	( 'layout-two-columns' == $layout['type'] )
-					{
-						get_template_part( 'template-parts/content-two', 'columns' );
-					}
-					else
-					{
-						get_template_part( 'template-parts/content', get_post_type() );
-					}
-
+                    get_template_part( 'template-parts/content', get_post_type() );
 				endwhile;
 				?>
 				</div>
 			</div>
 			<?php
 			the_posts_navigation();
-
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );

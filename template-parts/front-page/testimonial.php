@@ -13,7 +13,7 @@
             <?php
                 foreach($testimonial as $customer) {
                     ?>
-                    <div class="testimonial-wrapper">
+                    <div class="col-md-4 mt-5">
                         <div class="testimonial-content"><?php echo $customer["comment"]; ?></div>
                         <div class="testimonial-meta">
                             <div class="testimonial-meta-inner">
