@@ -1,11 +1,3 @@
-<?php
-/**
- * Template part for Menu
- *
- * @package Airi
- */
-?>
-
 <header id="masthead" class="site-header">
 
     <div class="<?php echo esc_attr( airi_menu_container() ); ?>">
@@ -24,10 +16,11 @@
             <nav id="site-navigation" class="main-navigation col-md-8">
                 <?php
                 wp_nav_menu( array(
-                    'theme_location' => 'menu-3',
+                    'theme_location' => 'menus',
                     'menu_id'        => 'primary-menu',
                 ) );
                 ?>
+                <a href="tel: 0934 122 124"><button class="btn-primary">LIÊN HỆ: 0934 122 124</button></a>
             </nav><!-- #site-navigation -->
         </div>
     </div>

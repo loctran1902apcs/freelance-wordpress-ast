@@ -45,3 +45,20 @@
   width: 100%;
   background-color: white;
 }
+
+.icon-chevronright {
+  &:after {
+    content: "\f054";
+  }
+}
+
+.attachment-thumb-h350 {
+  height: 350px;
+  object-fit: contain;
+}
+
+.attachment-thumb-w350 {
+  width: 350px;
+  object-fit: contain;
+}
+

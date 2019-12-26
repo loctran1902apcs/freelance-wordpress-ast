@@ -32,7 +32,7 @@ get_header();
 			endif;
 			?>
 			<div class="blog-loop" <?php echo airi_masonry_data(); ?>>
-				<div class="row">
+				<div class="row m-5">
 
 				<?php
 				/* Start the Loop */

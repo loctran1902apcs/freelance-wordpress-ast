@@ -22,7 +22,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <?php wp_head(); ?>
 </head>
@@ -31,7 +31,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'airi' ); ?></a>
 
-<!--	--><?php //$menu_layout = airi_menu_layout(); ?>
+	<?php $menu_layout = airi_menu_layout(); ?>
 	<?php get_template_part( 'template-parts/menus/menu' );
         if (is_front_page()) {
             echo '<div>';
