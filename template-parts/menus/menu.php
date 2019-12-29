@@ -2,7 +2,7 @@
 
     <div class="<?php echo esc_attr( airi_menu_container() ); ?>">
         <div class="row">
-            <div class="site-branding col-md-4 col-sm-6 col-9">
+            <div class="site-branding col-md-2 col-sm-6 col-9">
                 <a href="/"><img style="height: 35px; cursor: pointer" src="<?php echo get_theme_file_uri('/images/AST.png')?>" /></a>
             </div><!-- .site-branding -->
 
@@ -13,7 +13,7 @@
                 </button>
             </div>
 
-            <nav id="site-navigation" class="main-navigation col-md-8">
+            <nav id="site-navigation" class="main-navigation col-md-10">
                 <?php
                 wp_nav_menu( array(
                     'theme_location' => 'menus',

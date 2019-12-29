@@ -318,8 +318,13 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 /* Menu styles */
+.site-branding {
+  display: flex;
+  align-items: center;
+}
+
 .site-header {
-  padding: 30px 0;
+  padding: 12px 0;
   /* Sticky header */
 }
 .site-header .container-fluid {
@@ -398,7 +403,7 @@ a:hover, a:active {
 .main-navigation li {
   display: inline-block;
   position: relative;
-  padding: 0 25px;
+  padding: 0 14px;
   font-weight: 500;
 }
 .main-navigation li:first-of-type {
