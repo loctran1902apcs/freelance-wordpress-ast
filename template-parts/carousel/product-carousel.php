@@ -1,10 +1,7 @@
 <?php
-//    $id = get_the_ID();
-//    var_dump($id);
-//    $product = get_field("product_carousel", $id);
-//    var_dump($product);
-//?>
-
+    $carousel = get_field("carousel");
+    var_dump($carousel);
+?>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>

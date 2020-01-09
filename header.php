@@ -31,15 +31,11 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'airi' ); ?></a>
 
-	<?php $menu_layout = airi_menu_layout(); ?>
 	<?php get_template_part( 'template-parts/menus/menu' );
         if (is_front_page()) {
             echo '<div>';
         } else if (is_home()){
             echo '<div>';
-            echo '<div id="product-carousel-container" class="carousel-container">';
-            get_template_part('template-parts/carousel/product-carousel','product-carousel');
-            echo '</div>';
         } else {
             echo '<div id="content" class="site-content">';
         }

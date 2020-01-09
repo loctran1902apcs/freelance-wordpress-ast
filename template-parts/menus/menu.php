@@ -1,6 +1,6 @@
 <header id="masthead" class="site-header">
 
-    <div class="<?php echo esc_attr( airi_menu_container() ); ?>">
+    <div class="container">
         <div class="row">
             <div class="site-branding col-md-2 col-sm-6 col-9">
                 <a href="/"><img style="height: 35px; cursor: pointer" src="<?php echo get_theme_file_uri('/images/AST.png')?>" /></a>

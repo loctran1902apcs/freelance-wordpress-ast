@@ -6,7 +6,7 @@
     $link_text = 'Xem thông số';
     $link_contact = 'Liên hệ';
     $phone = 'tel: 0934 122 124';
-    $featured_products = get_field("featured_products")
+    $featured_products = get_field("featured_products");
 ?>
 
 <div class="front-products bg-white pb-5">

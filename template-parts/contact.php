@@ -1,9 +1,16 @@
+<?php
+    $merchant_contact = get_field("contact_merchant");
+    var_dump($merchant_contact);
+?>
+
 <div id="primary" class="content-area fullwidth col-md-12">
     <main id="main" class="site-main" role="main">
 
         <div class="row">
             <div class="col-md-6">
-                <div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=su%20van%20hanh+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">gps coordinates finder</a></iframe></div><br />
+                <div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=71%2F30%20%C4%90i%E1%BB%87n%20bi%C3%AAn%20ph%E1%BB%A7%20ph%C6%B0%E1%BB%9Dng%2015%20qu%E1%BA%ADn%20b%C3%ACnh%20th%E1%BA%A1nh+(ASTEK)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">find my location</a>
+                    </iframe>
+                </div><br />
             </div>
             <div class="col-md-6 pl-5">
                 <h2>Liên hệ đại lý</h2>

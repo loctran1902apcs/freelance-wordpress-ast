@@ -1,5 +1,5 @@
 /*!
-Theme Name: Airi
+Theme Name: ASTEK
 Theme URI: https://athemes.com/theme/airi
 Author: aThemes
 Author URI: https://athemes.com
@@ -48,15 +48,9 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 --------------------------------------------------------------*/
 @import "typography/typography";
 
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-@import "elements/elements";
 
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-@import "forms/forms";
+
+
 
 /*--------------------------------------------------------------
 # Navigation
@@ -66,7 +60,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*--------------------------------------------------------------
 # Woocommerce
 --------------------------------------------------------------*/
-@import "shop/woocommerce";
+//@import "shop/woocommerce";
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -86,7 +80,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-@import "site/secondary/widgets";
+//@import "site/secondary/widgets";
 
 /*--------------------------------------------------------------
 # Content
@@ -102,3 +96,5 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+@import "bootstrap/bootstrap";

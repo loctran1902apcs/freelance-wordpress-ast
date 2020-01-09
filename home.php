@@ -19,6 +19,9 @@ get_header();
 
 	<div id="primary" class="content-area <?php echo esc_attr( $layout['type'] ); ?> <?php echo esc_attr( $layout['cols'] ); ?>">
 		<main id="main" class="site-main">
+            <div id="product-carousel-container" class="carousel-container">';
+                <?php get_template_part('template-parts/carousel/product-carousel','product-carousel'); ?>
+            </div>'
 
 		<?php
 		if ( have_posts() ) :
