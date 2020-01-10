@@ -1,6 +1,5 @@
 /* Carousel bootstrap */
 (function ($) {
-	console.log('start carousel');
 	$(document).ready(function(){
 		$('.carousel').carousel({
 			interval: 2000
@@ -84,6 +83,7 @@
 	$( '.site-header' ).on( 'click', '.mobile-menu-toggle', function( e ) {
 		e.preventDefault();
 		$( 'body' ).toggleClass( 'mobile-menu-active' );
+		$( '#masthead').toggleClass( 'mobile-menu-active' );
 	} );
 
 
@@ -113,7 +113,7 @@
 			var headerHeight = $( '.site-header' ).outerHeight();
 			
 			if ( matchMedia( '(max-width: 1199px)' ).matches ) {
-
+				console.log('toggle mobile');
 				// Check if WordPress Admin bar is present and accomodate the extra spacing by pushing the mobile menu futher bellow
 				if ( $('#wpadminbar').length ) {
 					var wpadminbarHeight = $( '#wpadminbar' ).outerHeight();

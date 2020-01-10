@@ -1,0 +1,28 @@
+@keyframes move{
+  0%{
+    transform: scale(1) rotate(0deg);
+  }
+  100%{
+    transform: scale(1.1) rotate(0.1deg);
+  }
+}
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0);
+  }
+}
+
+.btn-cta {
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+  background-color: $color_primary;
+  color: white;
+  animation: shadow-pulse 1s infinite ease-in-out;
+}

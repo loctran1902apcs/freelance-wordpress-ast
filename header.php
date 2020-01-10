@@ -50,8 +50,8 @@
                 echo '<div class="front-container">';
                 echo '<div id="page-products" class="">';
             } else {
-                echo '<div class="container">';
-                echo 	'<div class="row">';
+                echo '<div class="">';
+                echo 	'<div class="">';
             }
 		}
 	?>

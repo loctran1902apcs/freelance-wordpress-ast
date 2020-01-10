@@ -1,6 +1,5 @@
 <?php
     $carousel = get_field("carousel");
-    var_dump($carousel);
 ?>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">

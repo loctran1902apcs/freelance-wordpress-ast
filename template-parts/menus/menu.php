@@ -20,7 +20,7 @@
                     'menu_id'        => 'primary-menu',
                 ) );
                 ?>
-                <a href="tel: 0934 122 124"><button class="btn-primary">LIÊN HỆ: 0934 122 124</button></a>
+                <a href="tel: 0934 122 124"><button class="btn-cta">LIÊN HỆ: 0934 122 124</button></a>
             </nav><!-- #site-navigation -->
         </div>
     </div>

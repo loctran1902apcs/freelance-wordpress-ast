@@ -7,7 +7,7 @@
         <div class="">
             <h1 class="text-white"><?php echo $hook["title"] ?></h1>
             <h2 class="text-white"><?php echo $hook["description"] ?></h2>
-            <a href="tel: 0934 122 124"><button class="btn-dark mt-4">LIÊN HỆ: 0934 122 124</button></a>
+            <a href="tel: 0934 122 124"><button class="btn-cta mt-4">LIÊN HỆ: 0934 122 124</button></a>
         </div>
     </div>
     <div class="hook-overlay"></div>

@@ -4,7 +4,14 @@ Template Name: Product
 */
 get_header();
 ?>
-    <div id="primary" class="content-area <?php echo esc_attr( $layout['type'] ); ?> <?php echo esc_attr( $layout['cols'] ); ?>">
+
+<?php
+    global $post;
+    $args = array('category_name' => "sản phẩm" );
+    $products = get_posts( $args );
+?>
+
+    <div id="primary">
         <main id="main" class="site-main">
             <div id="product-carousel-container" class="carousel-container">
                 <?php get_template_part('template-parts/carousel/product-carousel','product-carousel'); ?>
@@ -20,20 +27,19 @@ get_header();
                 <?php
                 endif;
                 ?>
-                <div class="blog-loop" <?php echo airi_masonry_data(); ?>>
-                    <div class="row m-5">
-
+                <div class="blog-loop">
+                    <div class="container">
                         <?php
                         /* Start the Loop */
-                        while ( have_posts() ) :
-                            the_post();
+                        foreach ( $products as $post ) :
+                            setup_postdata($post);
                             /*
                              * Include the Post-Type-specific template for the content.
                              * If you want to override this in a child theme, then include a file
                              * called content-___.php (where ___ is the Post Type name) and that will be used instead.
                              */
-                            get_template_part( 'template-parts/content', get_post_type() );
-                        endwhile;
+                            get_template_part( 'template-parts/product-wide');
+                        endforeach;
                         ?>
                     </div>
                 </div>
@@ -50,8 +56,5 @@ get_header();
     </div><!-- #primary -->
 
 <?php
-if ( $layout['sidebar'] ) {
-    get_sidebar();
-}
 get_footer();
 
