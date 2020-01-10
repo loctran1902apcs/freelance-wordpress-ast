@@ -905,12 +905,20 @@ ul.header-search-cart .header-cart-link .count {
 }
 
 .attachment-thumb-h350 {
+  width: 100%;
   height: 350px;
   object-fit: contain;
 }
 
 .attachment-thumb-w350 {
+  height: 100%;
   width: 350px;
+  object-fit: contain;
+}
+
+.attachment-thumb-100 {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 

@@ -1,5 +1,5 @@
 <?php
-    $image_size = 'thumb-w350';
+    $image_size = 'thumb-100';
     $link_text = 'Xem chi tiết';
     $link_contact = 'Liên hệ';
     $phone = 'tel: 0934 122 124';

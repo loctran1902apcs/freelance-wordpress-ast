@@ -13,11 +13,9 @@
  */
 
 get_header();
-
-//$layout = airi_blog_layout();
 ?>
 
-	<div id="primary" class="content-area <?php echo esc_attr( $layout['type'] ); ?> <?php echo esc_attr( $layout['cols'] ); ?>">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
             <div id="product-carousel-container" class="carousel-container">';
                 <?php get_template_part('template-parts/carousel/product-carousel','product-carousel'); ?>
@@ -34,7 +32,7 @@ get_header();
 				<?php
 			endif;
 			?>
-			<div class="blog-loop" <?php echo airi_masonry_data(); ?>>
+			<div class="blog-loop">
 				<div class="row m-5">
 
 				<?php

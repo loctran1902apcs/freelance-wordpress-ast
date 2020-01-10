@@ -31,16 +31,12 @@ get_header();
                     <div class="container">
                         <?php
                         /* Start the Loop */
-                        foreach ( $products as $post ) :
-                            setup_postdata($post);
-                            /*
-                             * Include the Post-Type-specific template for the content.
-                             * If you want to override this in a child theme, then include a file
-                             * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-                             */
-                            get_template_part( 'template-parts/product-wide');
-                        endforeach;
-                        ?>
+                        foreach ( $products as $post ) : ?>
+                            <div class="mt-3">
+                                <?php setup_postdata($post);
+                                get_template_part( 'template-parts/product-wide');?>
+                            </div>
+                        <?php endforeach;?>
                     </div>
                 </div>
                 <?php

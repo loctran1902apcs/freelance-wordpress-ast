@@ -1,6 +1,5 @@
 <?php
     $merchant_contact = get_field("contact_merchant");
-    var_dump($merchant_contact);
 ?>
 
 <div id="primary" class="content-area fullwidth col-md-12">
