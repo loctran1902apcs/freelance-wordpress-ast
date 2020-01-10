@@ -1,14 +1,14 @@
 <?php
 /*
-Template Name: Product
+Template Name: News
 */
 get_header();
 ?>
 
 <?php
-    global $post;
-    $args = array('category_name' => "sản phẩm" );
-    $products = get_posts( $args );
+global $post;
+$args = array('category_name' => "tin tức" );
+$news = get_posts( $args );
 ?>
 
     <div id="primary">
@@ -16,19 +16,25 @@ get_header();
             <div id="product-carousel-container" class="carousel-container">
                 <?php get_template_part('template-parts/carousel/product-carousel','product-carousel'); ?>
             </div>
-            <header>
-                <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-            </header>
             <?php
-            if ( have_posts() ) : ?>
-                <div class="blog-loop">
-                    <div class="container">
+            if ( have_posts() ) :
+
+                if ( is_home() && ! is_front_page() ) :
+                    ?>
+                    <header>
+                        <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+                    </header>
+                <?php
+                endif;
+                ?>
+                <div class="container">
+                    <div class="d-flex flex-wrap">
                         <?php
                         /* Start the Loop */
-                        foreach ( $products as $post ) : ?>
-                            <div class="mt-3">
+                        foreach ( $news as $post ) : ?>
+                            <div class="col-md-4 p-4">
                                 <?php setup_postdata($post);
-                                get_template_part( 'template-parts/product-wide');?>
+                                get_template_part( 'template-parts/new');?>
                             </div>
                         <?php endforeach;?>
                     </div>

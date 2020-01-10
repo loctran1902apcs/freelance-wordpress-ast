@@ -51,7 +51,16 @@
                 echo '<div id="page-products" class="">';
             } else {
                 echo '<div class="">';
-                echo 	'<div class="">';
+                echo '<div class="">';
+                if ( function_exists('yoast_breadcrumb') )
+                { ?>
+<!--                    <nav aria-label="breadcrumb">-->
+<!--                      <ol class="breadcrumb">-->
+<!--                    --><?php
+//                        yoast_breadcrumb('<li id="breadcrumb-item" class="breadcrumb-item"> ','</p>'); ?>
+<!--                    </ol>-->
+<!--                    </nav>-->
+                <?php }
             }
 		}
 	?>

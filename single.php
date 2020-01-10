@@ -14,19 +14,6 @@ get_header();
         <main id="main" class="site-main">
 		<?php
 		while ( have_posts() ) : the_post();
-
-//			if ( 'layout-default' == $single_layout )
-//			{
-//				get_template_part( 'template-parts/content', 'single' );
-//			}
-//			elseif ( 'layout-2' == $single_layout )
-//			{
-//				get_template_part( 'template-parts/content-single', '2' );
-//			}
-//			elseif ( 'layout-3' == $single_layout )
-//			{
-//				get_template_part( 'template-parts/content-single', '3' );
-//			}
             get_template_part( 'template-parts/content', 'single' );
 			the_post_navigation();
 
