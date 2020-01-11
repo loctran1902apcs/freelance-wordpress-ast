@@ -26,3 +26,27 @@
   color: white;
   animation: shadow-pulse 1s infinite ease-in-out;
 }
+
+.btn-hero-contact {
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+  background-color: $color_primary;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  text-underline: none;
+}
+
+.btn-hero-download {
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+  background-color: #dc4041;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  text-underline: none;
+}

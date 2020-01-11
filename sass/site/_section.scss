@@ -1,0 +1,27 @@
+.hero-section {
+  background-image: linear-gradient(to top,rgba(0,0,0,.1) 0,transparent 100%);
+}
+
+.entry-content {
+  & h1 {
+    margin-top: 24px;
+  }
+
+  & h2 {
+    margin-top: 20px;
+  }
+
+  & h3 {
+    margin-top: 16px;
+  }
+
+  & p {
+    padding-bottom: 16px;
+  }
+}
+
+.wp-block-table {
+  & td {
+    padding: 14px;
+  }
+}

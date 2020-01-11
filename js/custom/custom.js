@@ -119,7 +119,7 @@
 					var wpadminbarHeight = $( '#wpadminbar' ).outerHeight();
 					$( '.main-navigation' ).css( 'top', headerHeight + wpadminbarHeight - 1 );
 				} else {
-					$( '.main-navigation' ).css( 'top', headerHeight - 1 );
+					$( '.main-navigation' ).css( 'top', headerHeight/2 );
 				}
 
 			} else {
