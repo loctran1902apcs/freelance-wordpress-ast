@@ -19535,7 +19535,12 @@ a:hover, a:active {
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.15);
+  border-bottom: solid 3px #E3AF05;
   top: 0;
   max-height: 94px;
   z-index: 999;
@@ -20174,6 +20179,7 @@ ul.header-search-cart .header-cart-link .count {
 
 .site-content {
   padding: 0;
+  padding-top: 80px;
 }
 .page-template-template_page-builder .site-content {
   padding: 0;
@@ -20672,6 +20678,15 @@ ul.header-search-cart .header-cart-link .count {
 /*--------------------------------------------------------------
 ## Elementor
 --------------------------------------------------------------*/
+.footer-wrapper ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-wrapper li {
+  padding: 8px 0;
+  text-transform: capitalize;
+}
+
 .footer-widgets {
   background-color: #23272b;
   color: white;

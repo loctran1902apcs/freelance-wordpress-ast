@@ -15,7 +15,12 @@
 }
 
 .site-header {
-	position: sticky;
+	position: fixed;
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+	border-bottom: solid 3px $color_primary;
 	top: 0;
 	max-height: 94px;
 	z-index: 999;

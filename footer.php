@@ -20,14 +20,10 @@
 		}
 	?>
 
-	<?php get_sidebar( 'footer' ); ?>
-
 	<footer id="colophon" class="site-footer">
-		<div class="container">
-<!--            <div>This is footer</div>-->
-			<div class="row">
-				<?php do_action( 'footer' ); ?>
-			</div>
+		<div class="">
+            <?php get_template_part("template-parts/menus/footer-menu"); ?>
+            <?php do_action( 'footer' ); ?>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
