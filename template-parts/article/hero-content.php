@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <div class="row p-5">
+    <div class="row p-md-5">
         <div class="col-sm-6">
             <header class="">
                 <h1 class="hero-title "><?php the_title(); ?></h1>

@@ -4,3 +4,21 @@ h1, h2, h3, h4, h5, h6 {
 	color: #191919;
 	font-weight: 500;
 }
+
+$break-small: 320px;
+$break-medium: 680px;
+$break-large: 1200px;
+
+@media screen and (max-width: $break-small) {
+	h1 {
+		font-size: 1.75rem;
+	}
+	h2 {
+		font-size: 1.2rem;
+	}
+}
+@media screen and (min-width: $break-large) {
+	h1 {
+		font-size: 2.5rem;
+	}
+}

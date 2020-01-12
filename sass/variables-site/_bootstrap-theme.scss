@@ -8,25 +8,26 @@ html {
   font-size: 1rem;
 }
 
-@import "../bootstrap/bootstrap";
-
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  $font-size-base: 0.5rem;
+  $h1-font-size: 0.5rem;
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  $font-size-base: 0.7rem;
+  $h1-font-size: 0.7rem;
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  $font-size-base: 0.8rem;
+  $h1-font-size: 0.8rem;
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  $font-size-base: 1rem;
+  $h1-font-size: 1rem;
 }
+
+@import "../bootstrap/bootstrap";
+
 

@@ -83,7 +83,7 @@
 	$( '.site-header' ).on( 'click', '.mobile-menu-toggle', function( e ) {
 		e.preventDefault();
 		$( 'body' ).toggleClass( 'mobile-menu-active' );
-		$( '#masthead').toggleClass( 'mobile-menu-active' );
+		$( '#site-navigation-mobile').toggleClass( 'mobile-menu-active' );
 	} );
 
 

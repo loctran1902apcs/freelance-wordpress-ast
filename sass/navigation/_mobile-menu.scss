@@ -1,0 +1,39 @@
+.main-navigation-mobile {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+.main-navigation-mobile.mobile-menu-active {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  visibility: visible;
+
+  & ul {
+    list-style: none;
+    padding-top: 10px;
+  }
+
+  & li {
+    padding: 10px 0;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase ;
+
+    &.current_page_item {
+      color: $color_primary !important;
+    }
+  }
+
+  & a {
+    color: black;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  .main-navigation-mobile {
+    display: none;
+  }
+}

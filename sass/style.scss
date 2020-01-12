@@ -38,6 +38,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+@import "bootstrap/bootstrap";
+
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 @import "mixins/repeatable";
@@ -96,4 +98,3 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 --------------------------------------------------------------*/
 @import "media/media";
 
-@import "bootstrap/bootstrap";
