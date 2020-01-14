@@ -20170,6 +20170,29 @@ ul.header-search-cart .header-cart-link .count {
   object-fit: contain;
 }
 
+.intro-item-image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.intro-item-heading {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  font-weight: bold;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: larger;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

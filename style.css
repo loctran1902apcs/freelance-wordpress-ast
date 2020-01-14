@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*!
-Theme Name: ASTEK
+Theme Name: ASTEK-2
 Author: Loc Tran
 Author URI: https://loctran.
 Description: Theme được làm riêng cho công ty ASTEK
-Version: 1.0.9
+Version: 2.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: astek
@@ -20168,6 +20168,29 @@ ul.header-search-cart .header-cart-link .count {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.intro-item-image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.intro-item-heading {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  font-weight: bold;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: larger;
 }
 
 /*--------------------------------------------------------------

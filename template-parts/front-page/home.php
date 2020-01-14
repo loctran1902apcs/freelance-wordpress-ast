@@ -1,16 +1,23 @@
 <div>
     <section>
-        <?php get_template_part("template-parts/front-page/hook", 'front-hook'); ?>
+        <?php get_template_part("template-parts/front-page/hook"); ?>
     </section>
     <section>
-        <?php get_template_part("template-parts/front-page/products", "front-products"); ?>
+        <?php get_template_part("template-parts/front-page/introduction"); ?>
     </section>
     <section>
-        <?php get_template_part("template-parts/front-page/certificate","front-certificate"); ?>
+        <?php get_template_part("template-parts/front-page/products"); ?>
     </section>
     <section>
-        <?php get_template_part("template-parts/front-page/testimonial","front-testimonial"); ?>
+        <?php get_template_part("template-parts/front-page/news"); ?>
     </section>
+
+<!--    <section>-->
+<!--        --><?php //get_template_part("template-parts/front-page/certificate"); ?>
+<!--    </section>-->
+<!--    <section>-->
+<!--        --><?php //get_template_part("template-parts/front-page/testimonial"); ?>
+<!--    </section>-->
 <!--    <section>-->
 <!--        --><?php //get_template_part("template-parts/carousel/product-carousel","procut-testimonial"); ?>
 <!--    </section>-->

@@ -10,7 +10,7 @@
 ?>
 
 <div class="front-products bg-white pb-5">
-    <div class="container pt-5 pb-3">
+    <div class="container pt-5 pb-3 text-center">
         <h2 class="h1">
             Sản phẩm nổi bật
         </h2>
