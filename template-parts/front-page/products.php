@@ -11,7 +11,7 @@
 
 <div class="front-products bg-white pb-5">
     <div class="container pt-5 pb-3 text-center">
-        <h2 class="h1">
+        <h2 class="h1" data-aos="zoom-in">
             Sản phẩm nổi bật
         </h2>
     </div>
@@ -20,7 +20,7 @@
         <div class="row">
         <?php
             foreach( $featured_products as $post ):?>
-            <div class="col-md-6 p-2">
+            <div class="col-md-6 p-2" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="650">
                 <article class="inner-product bg-light p-5 text-center">
                     <?php
                         the_title( '<h2 class=""><a class="text-dark" href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
