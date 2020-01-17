@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*!
-Theme Name: ASTEK-2
+Theme Name: ASTEK
 Author: Loc Tran
 Author URI: https://loctran.
 Description: Theme được làm riêng cho công ty ASTEK
-Version: 2.0.0
+Version: 1.0.9
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: astek
@@ -20202,7 +20202,7 @@ ul.header-search-cart .header-cart-link .count {
 
 .site-content {
   padding: 0;
-  padding-top: 80px;
+  padding-top: 70px;
 }
 .page-template-template_page-builder .site-content {
   padding: 0;

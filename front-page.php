@@ -14,17 +14,8 @@
 
 get_header(); ?>
 
-    <div id="primary" class="content-area">
+    <div id="primary" class="site-content">
         <?php get_template_part( 'template-parts/front-page/home', 'none' ); ?>
-
-        <!--START CONTACT SECTION -->
-        <section class="bg-light mt-lg-5 pb-5">
-            <div class="container pt-5">
-                <div class="mt-5">
-                    <?php get_template_part('template-parts/contact'); ?>
-                </div>
-            </div>
-        </section>
     </div><!-- #primary -->
 
 <?php

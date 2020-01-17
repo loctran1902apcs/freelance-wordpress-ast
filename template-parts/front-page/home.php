@@ -11,6 +11,10 @@
     <section>
         <?php get_template_part("template-parts/front-page/news"); ?>
     </section>
+    <!--START CONTACT SECTION -->
+    <section>
+        <?php get_template_part('template-parts/front-page/front-contact'); ?>
+    </section>
 
 <!--    <section>-->
 <!--        --><?php //get_template_part("template-parts/front-page/certificate"); ?>

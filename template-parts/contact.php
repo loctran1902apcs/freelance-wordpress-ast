@@ -1,5 +1,5 @@
 <?php
-    $merchant_contact = get_field("contact_merchant");
+    $contact_s = get_field("contact");
 ?>
 
 <div id="primary" class="content-area fullwidth col-md-12">
