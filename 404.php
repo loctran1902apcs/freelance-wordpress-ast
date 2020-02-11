@@ -7,7 +7,9 @@
  * @package Airi
  */
 
-get_header(); ?>
+get_header();
+$text = "Khoong tìm thấy nội dung";
+?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
@@ -18,10 +20,8 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try searching sssss?', 'airi' ); ?></p>
-
-					<!-- <?php get_search_form(); ?> -->
-
+                    <h2><?php echo $text ?></h2>
+                    <button class="btn-back">Quay lại trang chủ</button>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 

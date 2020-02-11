@@ -19392,6 +19392,33 @@ textarea {
   line-height: 1.5;
 }
 
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 34px;
+  }
+}
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: "Asap", sans-serif;
@@ -20765,6 +20792,15 @@ ul.header-search-cart .header-cart-link .count {
   background-color: #E3AF05;
   color: white;
   animation: shadow-pulse 1s infinite ease-in-out;
+}
+
+.btn-back {
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+  background-color: dodgerblue;
+  color: white;
 }
 
 .btn-hero-contact {

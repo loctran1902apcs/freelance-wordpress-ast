@@ -40,8 +40,8 @@
 
         </footer><!-- .entry-footer -->
     </article>
-    <section class="bg-light p-4">
-        <h3 class="pt-4">Bài viết liên quan</h3>
+    <section class="bg-light pt-4 pb-4">
+        <h3 class="pt-4 pl-4">Bài viết liên quan</h3>
         <div class="d-flex flex-wrap">
             <?php
             /* Start the Loop */
@@ -51,6 +51,25 @@
                     get_template_part( 'template-parts/new');?>
                 </div>
             <?php endforeach;?>
+        </div>
+    </section>
+    <?php
+    $related = get_posts( array( 'category_name' => 'sản phẩm', 'numberposts' => 3, 'post__not_in' => array($post->ID) ) );
+    ?>
+    <section class="bg-light pt-4 pb-4">
+        <h3 class="pl-4 pt-4">Sản phẩm nổi bật</h3>
+        <div class="d-flex flex-wrap">
+            <?php
+            /* Start the Loop */
+            foreach ( $related as $post ) : ?>
+                <div class="col-md-4 p-4" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="400" data-aos-delay="550">
+                    <?php setup_postdata($post);
+                    get_template_part( 'template-parts/product-featured');?>
+                </div>
+                <?php
+                wp_reset_postdata();
+            endforeach;
+            ?>
         </div>
     </section>
 </article><!-- #post-<?php the_ID(); ?> -->
