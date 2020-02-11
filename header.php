@@ -17,12 +17,22 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <?php wp_head(); ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158089609-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158089609-1');
+    </script>
 </head>
 
 <body <?php body_class(); ?>>

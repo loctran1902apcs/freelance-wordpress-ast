@@ -4,25 +4,22 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Airi
  */
-
-$hide_thumb 	= get_theme_mod( 'single_hide_thumb' );
-$hide_date 		= get_theme_mod( 'single_hide_date' );
-$hide_cats 		= get_theme_mod( 'single_hide_cats' );
-$hide_author 	= get_theme_mod( 'single_hide_author' );
+    global $post;
+    $args = array( 'numberposts' => 3, 'category_name' => 'tin tức' );
+    $related_news = get_posts( $args );
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="container">
+    <figure class="hero-image-container">
+        <img style="width: 100%; height: 350px; object-fit: cover" src="<?php the_post_thumbnail_url(); ?>" alt="">
+    </figure>
+    <article class="container">
         <header class="entry-header">
             <?php
                 the_title( '<h1 class="entry-title">', '</h1>' );
             ?>
         </header><!-- .entry-header -->
-        <div class="hero-image-container">
-            <img style="width: 100%; height: 350px; object-fit: cover" src="<?php the_post_thumbnail_url(); ?>" alt="">  <!-- the_post_thumbnail( 'product-feature' ); -->
-        </div>
         <div class="entry-content">
             <?php
                 the_content( sprintf(
@@ -37,16 +34,23 @@ $hide_author 	= get_theme_mod( 'single_hide_author' );
                     ),
                     get_the_title()
                 ) );
-
-                wp_link_pages( array(
-                    'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'airi' ),
-                    'after'  => '</div>',
-                ) );
             ?>
         </div><!-- .entry-content -->
-
         <footer class="entry-footer">
 
         </footer><!-- .entry-footer -->
-    </div>
+    </article>
+    <section class="bg-light p-4">
+        <h3 class="pt-4">Bài viết liên quan</h3>
+        <div class="d-flex flex-wrap">
+            <?php
+            /* Start the Loop */
+            foreach ( $related_news as $post ) : ?>
+                <div class="col-md-4 p-4" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="400" data-aos-delay="550">
+                    <?php setup_postdata($post);
+                    get_template_part( 'template-parts/new');?>
+                </div>
+            <?php endforeach;?>
+        </div>
+    </section>
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -16,9 +16,9 @@ get_header();
 			if ( $category->name == "sản phẩm" ) :
                 get_template_part( 'template-parts/content-single', 'product' );
             else:
-                get_template_part( 'template-parts/content-single');
+                get_template_part( 'template-parts/content-single', 'new');
             endif;
-            the_post_navigation();
+//            the_post_navigation();
         endwhile; // End of the loop.
 		?>
 
